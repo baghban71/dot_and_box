@@ -16,7 +16,7 @@ export default class MainMenu extends Phaser.Scene {
 		Utilities.LogSceneMethodEntry("MainMenu", "create");
 		const textYPosition = this.cameras.main.height / 3;
 
-		const newGameText = this.add.text(this.cameras.main.centerX, textYPosition, "Start");
+		const newGameText = this.add.text(this.cameras.main.centerX, textYPosition, "--[[ Start ]]--");
 		newGameText
 			.setFontFamily("monospace")
 			.setFontSize(40)

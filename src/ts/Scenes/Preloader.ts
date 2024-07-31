@@ -11,13 +11,15 @@ export default class Preloader extends Phaser.Scene {
 		this.addProgressBar();
 
 		this.load.path = "assets/";
-		this.load.image("phaser_pixel_medium_flat");
-		this.load.image("Phaser-Logo-Small");
+		 this.load.image("phaser_pixel_medium_flat");
+		 this.load.image("Phaser-Logo-Small");
+
+		this.load.spritesheet('dragcircle', 'dragcircle.png', { frameWidth: 16 });
 
 		// You should remove this logic; this is only included here to show off the progress bar.
-		for (let i = 0; i < 100; i++) {
-			this.load.image("Phaser-Logo-Small" + i, "Phaser-Logo-Small.png");
-		}
+		// for (let i = 0; i < 100; i++) {
+		// 	this.load.image("Phaser-Logo-Small" + i, "Phaser-Logo-Small.png");
+		// }
 	}
 
 	public create(): void {
